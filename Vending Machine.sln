@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vending Machine", "Vending Machine\Vending Machine.csproj", "{0F872C23-B9AD-4B20-A90B-4D008744402F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testVendingMachine", "Test for vending machine\testVendingMachine.csproj", "{B2324E27-C3DC-43E5-9CC5-8E4799DA2456}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F872C23-B9AD-4B20-A90B-4D008744402F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F872C23-B9AD-4B20-A90B-4D008744402F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F872C23-B9AD-4B20-A90B-4D008744402F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F872C23-B9AD-4B20-A90B-4D008744402F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2324E27-C3DC-43E5-9CC5-8E4799DA2456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2324E27-C3DC-43E5-9CC5-8E4799DA2456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2324E27-C3DC-43E5-9CC5-8E4799DA2456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2324E27-C3DC-43E5-9CC5-8E4799DA2456}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BB7B5BE-6D7A-4E12-A845-2C9A7A5A0DD4}
+	EndGlobalSection
+EndGlobal
