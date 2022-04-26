@@ -89,7 +89,21 @@ namespace Vending_Machine
                         
                         break;
                     case 4:
-                        Console.WriteLine($"{vendingMachine.EndTransaction()} kr back");
+                        int lastVal = 0;
+                        int x = 0;
+                        foreach (int returnValue in vendingMachine.EndTransaction())
+                        {
+                            
+                            x++;
+                            if(lastVal != returnValue)
+                            {
+                                lastVal = returnValue;
+                                Console.WriteLine($"you got {x} x {lastVal}");
+                                x = 0;
+                            }
+                            
+                        }
+                        
                         break;
                     default:
                         Console.WriteLine($"{result} is not a alternative in the menu");

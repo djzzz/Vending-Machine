@@ -13,6 +13,6 @@ namespace Vending_Machine
         public bool Purchase(int id);
         public List<Product> ShowAll();
         public bool InsertMoney(int amount);
-        public int EndTransaction();
+        public List<int> EndTransaction();
     }
 }

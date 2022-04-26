@@ -51,10 +51,15 @@ namespace Vending_Machine
             return false;
         }
 
-        int IVending.EndTransaction()
+        List<int> IVending.EndTransaction()
         {
-            user.AddMoney(moneyHandler.kronorsBack());
-            return user.Money;
+            List <int> returnValues = moneyHandler.kronorsBack();
+            foreach(int returnValue in returnValues)
+            {
+                user.AddMoney(returnValue);
+            }
+            
+            return returnValues;
         }
     }
 }

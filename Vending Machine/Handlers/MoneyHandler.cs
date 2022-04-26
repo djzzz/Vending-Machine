@@ -33,10 +33,17 @@ namespace Vending_Machine
             }
             return false;
         }
-        public int kronorsBack()
+        public List<int> kronorsBack()
         {
-            int amount = kroners;
-            kroners = 0;
+            List<int> amount = new List<int> { };
+            for (int i = allowedAmounts.Length - 1; i >= 0 ; i--)
+            {
+                while(kroners >= allowedAmounts[i])
+                {
+                    kroners -= allowedAmounts[i];
+                    amount.Add(allowedAmounts[i]);
+                }
+            }
             return amount;
         }
     }

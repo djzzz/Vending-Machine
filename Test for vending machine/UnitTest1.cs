@@ -123,7 +123,7 @@ namespace Test_for_vending_machine
             IVending vendingMachine = new VendingMachine(user);
             vendingMachine.InsertMoney(500);
             vendingMachine.Purchase(0);
-            Assert.Equal(4800, vendingMachine.EndTransaction());
+            Assert.Equal(new List<int> { 1000, 500, 100, 100, 100 }, vendingMachine.EndTransaction());
         }
     }
 }
